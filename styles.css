@@ -1,0 +1,389 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Navigation */
+nav {
+    background-color: #f8f9fa;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #007bff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav li:first-child {
+    margin-left: 0;
+}
+
+nav a {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+nav button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #0056b3;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('hero-image.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+}
+
+.hero * {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 300px;
+    font-size: 16px;
+}
+
+.search-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Featured Tours */
+.featured-tours {
+    margin-bottom: 40px;
+}
+
+.featured-tours h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tour-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.tour-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.tour-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tour-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tour-item h4 {
+    margin: 15px;
+    font-size: 1.5em;
+}
+
+.tour-item p {
+    margin: 0 15px 15px;
+}
+
+.tour-link {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.tour-link:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
+/* Guide Previews */
+.guide-previews {
+    margin-bottom: 40px;
+}
+
+.guide-previews h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.guide-carousel {
+    /* Slick Carousel Styles - Overriding defaults if needed */
+}
+
+.guide-card {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 0 10px;
+}
+
+.guide-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 10px;
+}
+
+.guide-card h4 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.guide-card p {
+    margin-bottom: 10px;
+}
+
+.guide-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.guide-link:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
+/* Testimonials */
+.testimonials {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+}
+
+.testimonials h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.testimonial-slider {
+    /* Slick Carousel Styles - Overriding defaults if needed */
+}
+
+.testimonial {
+    text-align: center;
+    padding: 20px;
+}
+
+.testimonial p:first-child {
+    font-style: italic;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Call to Action */
+.cta {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e9ecef;
+}
+
+.cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Slick Carousel Overrides (Optional - Adjust as needed) */
+.slick-dots {
+    bottom: 10px;
+}
+
+.slick-dots li button:before {
+    color: #007bff; /* Dot color */
+    font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #0056b3; /* Active dot color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 2.5em;
+    }
+
+    .search-container {
+        flex-direction: column;
+    }
+
+    .search-container input[type="text"] {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .cta h2 {
+        font-size: 2em;
+    }
+
+    .cta p {
+        font-size: 1em;
+    }
+}

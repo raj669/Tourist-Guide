@@ -1,0 +1,172 @@
+/* /* search-results.css
+
+/* General Layout */
+.search-results-page {
+    padding: 20px;
+}
+
+/* Search Header */
+.search-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-summary h2 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.search-summary p {
+    font-size: 1.1em;
+    color: #777;
+}
+
+.sort-options label {
+    margin-right: 5px;
+}
+
+.sort-options select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Guide Listings */
+.guide-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Adjust minmax as needed */
+    gap: 20px;
+}
+
+.guide-card {
+    display: flex; /* Use flexbox for guide card layout */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.guide-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.guide-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.guide-details {
+    flex: 1; /* Take up remaining space */
+}
+
+.guide-details h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.guide-location {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.guide-rating {
+    color: #fdd835; /* Gold color */
+    margin-bottom: 10px;
+}
+
+.guide-rating i {
+    margin-right: 2px;
+}
+
+.guide-description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.guide-profile-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.guide-profile-link:hover {
+    background-color: #0056b3;
+}
+
+/* Pagination */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.page-link {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.page-link:hover {
+    background-color: #f0f0f0;
+}
+
+.page-link.current {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.page-link.disabled {
+    color: #aaa;
+    pointer-events: none;
+    cursor: default;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sort-options {
+        margin-top: 10px;
+    }
+
+    .guide-listings {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+
+    .guide-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .guide-image {
+        margin: 0 auto 15px;
+    }
+
+    .guide-details {
+        text-align: left; /* Reset text alignment */
+    }
+
+}  

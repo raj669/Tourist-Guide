@@ -1,0 +1,66 @@
+/* tour-details.css */
+
+/* Tour Details Page Styles */
+.tour-details {
+    padding: 20px;
+}
+
+.tour-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tour-header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.tour-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.tour-info {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tour-info h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.tour-info p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.tour-info ul,
+.tour-info ol {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.tour-info ol {
+    list-style: decimal; /* Use numbers for ordered lists */
+}
+
+.tour-info li {
+    margin-bottom: 5px;
+}
+
+.tour-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.tour-info a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,78 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Signup</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="auth.css">   
+</head>
+<body>
+
+    <nav>
+        <a href="index.html"><h1>Tourist Guide</h1></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="search.html">Find a Guide</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><button id="login-btn">Login</button></li>
+        </ul>
+    </nav>
+
+    <main class="auth-container">
+        <div class="auth-form">
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="login-password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+        </div>
+
+        <div class="auth-form" id="signup-form" style="display: none;">
+            <h2>Signup</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="signup-name">Name:</label>
+                    <input type="text" id="signup-name" name="signup-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email:</label>
+                    <input type="email" id="signup-email" name="signup-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password:</label>
+                    <input type="password" id="signup-password" name="signup-password" required>
+                </div>
+                <button type="submit">Signup</button>
+            </form>
+            <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+        </div>
+
+        <!-- User Data Display (for demonstration only - in real app, secure this!) -->
+        <div id="user-data" style="display: none;">
+            <h2>User Data</h2>
+            <p>Name: <span id="display-name"></span></p>
+            <p>Email: <span id="display-email"></span></p>
+            <button id="update-user">Update</button>
+            <button id="delete-user">Delete</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>For more Information Contact: 911</p>
+    </footer>
+
+    <script src="auth.js"></script>
+
+</body>
+</html>
